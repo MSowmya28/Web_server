@@ -19,7 +19,7 @@ Serving the HTML pages.
 
 Testing the webserver
 ## PROGRAM:
-[8:20 AM, 12/1/2021] Jithu❤️: <!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
 <title>My webserver</title>
