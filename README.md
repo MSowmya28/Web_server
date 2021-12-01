@@ -19,5 +19,41 @@ Serving the HTML pages.
 
 Testing the webserver
 ## PROGRAM:
+[8:20 AM, 12/1/2021] Jithu❤️: <!DOCTYPE html>
+<html>
+<head>
+<title>My webserver</title>
+</head>
+<body>
+<h1>Name:Sowmya.M</h1>
+<h2>21005357</h2>
+<h2>Artificial inteligence and data science</h2>
+</body>
+</html>
+"""
+
+class myhandler(BaseHTTPRequestHandler):
+
+    def do_GET(self):
+
+        print("request received")
+
+        self.send_response(200)
+
+        self.send_header('content-type', 'text/html; charset=utf-8')
+
+        self.end_headers()
+
+        self.wfile.write(content.encode())
+
+server_address = ('',8080)
+
+httpd = HTTPServer(server_address,myhandler)
+
+print("my webserver is running...")
+
+httpd.serve_forever()
+
 ## OUTPUT:
+![output](https://github.com/MSowmya28/Web_server/blob/main/output.png?raw=true)
 ## RESULT:
